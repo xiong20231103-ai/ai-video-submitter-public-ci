@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.exe
+*.zip
+.env*
+*.log
+*.db
+*.sqlite
+saved_task_box.json
+task_submitter_pending.json
+task_submitter_config.json
+connection.json
+dist/
+build/

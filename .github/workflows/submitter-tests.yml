@@ -1,0 +1,23 @@
+name: Sanitized submitter fixtures
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  submitter:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - name: Isolated query-only, UI boundary and contract tests
+        run: python -B tools/run_submitter_tests.py
+      - name: Portable boundaries and synthetic update/rollback
+        run: |
+          python -B tools/test_portable_v14.py
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -B tools/test_portable_update.py
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }

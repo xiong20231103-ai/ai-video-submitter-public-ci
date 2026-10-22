@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "templateVersion": "2026.08.02.1",
+  "templates": [
+    {
+      "id": "cloud-carbon",
+      "label": "项目甲 · 碳岩板",
+      "project": "项目甲",
+      "material": "碳岩板",
+      "materials": [
+        "碳岩板",
+        "净白板",
+        "金属板",
+        "镜面板",
+        "木饰面",
+        "PU石",
+        "PU软石"
+      ],
+      "expectedCount": 24,
+      "download_path_source": "subject_dir",
+      "subtitle_mode": "AI 去除 STTN",
+      "subtitle_enabled": true,
+      "download_workers": 2
+    },
+    {
+      "id": "physical-default",
+      "label": "项目实体 · 净白板",
+      "project": "项目实体",
+      "material": "净白板",
+      "materials": [
+        "碳岩板",
+        "净白板",
+        "金属板",
+        "镜面板",
+        "木饰面",
+        "PU石",
+        "PU软石"
+      ],
+      "expectedCount": 13,
+      "download_path_source": "tikhub_downloads",
+      "subtitle_mode": "AI 去除 STTN",
+      "subtitle_enabled": true,
+      "download_workers": 2
+    },
+    {
+      "id": "huang-default",
+      "label": "项目乙 · 碳岩板",
+      "project": "项目乙",
+      "material": "碳岩板",
+      "materials": [
+        "碳岩板",
+        "净白板",
+        "金属板",
+        "镜面板",
+        "木饰面",
+        "PU石",
+        "PU软石"
+      ],
+      "expectedCount": 8,
+      "download_path_source": "tikhub_downloads",
+      "subtitle_mode": "AI 去除 STTN",
+      "subtitle_enabled": true,
+      "download_workers": 2
+    },
+    {
+      "id": "real-huang-default",
+      "label": "项目丙 · 碳岩板",
+      "project": "项目丙",
+      "material": "碳岩板",
+      "materials": [
+        "碳岩板",
+        "净白板",
+        "金属板",
+        "镜面板",
+        "木饰面",
+        "PU石",
+        "PU软石"
+      ],
+      "expectedCount": 26,
+      "download_path_source": "tikhub_downloads",
+      "subtitle_mode": "AI 去除 STTN",
+      "subtitle_enabled": true,
+      "download_workers": 2
+    },
+    {
+      "id": "spc-floor",
+      "label": "项目地板 · 塑木地板",
+      "project": "项目地板",
+      "material": "塑木地板",
+      "materials": [
+        "塑木地板"
+      ],
+      "expectedCount": 4,
+      "download_path_source": "tikhub_downloads",
+      "subtitle_mode": "AI 去除 STTN",
+      "subtitle_enabled": true,
+      "download_workers": 2
+    },
+    {
+      "id": "spc-wall",
+      "label": "项目墙板 · 晶岩墙板",
+      "project": "项目墙板",
+      "material": "晶岩墙板",
+      "materials": [
+        "晶岩墙板"
+      ],
+      "expectedCount": 4,
+      "download_path_source": "tikhub_downloads",
+      "subtitle_mode": "AI 去除 STTN",
+      "subtitle_enabled": true,
+      "download_workers": 2
+    },
+    {
+      "id": "denor-natural-flow",
+      "label": "DENOR自然流",
+      "project": "DENOR",
+      "material": "清淤泵",
+      "materials": [
+        "清淤泵",
+        "潜污泵",
+        "离心泵",
+        "轴流泵",
+        "粉碎格栅",
+        "一体化预制泵站",
+        "大型泵站",
+        "移动泵车"
+      ],
+      "expectedCount": 21,
+      "download_path_source": "tikhub_downloads",
+      "subtitle_mode": "AI 去除 STTN",
+      "subtitle_enabled": true,
+      "download_workers": 2,
+      "batchKind": "denor-natural-flow",
+      "languagePlan": [
+        {
+          "outputCount": 18,
+          "name": "英语",
+          "code": "en",
+          "audioCount": 1,
+          "accountCount": 6
+        },
+        {
+          "outputCount": 3,
+          "name": "西语",
+          "code": "es",
+          "audioCount": 1,
+          "accountCount": 1
+        }
+      ],
+      "requiresDenorAssets": true
+    }
+  ]
+}
